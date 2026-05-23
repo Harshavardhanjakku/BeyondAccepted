@@ -1,0 +1,11 @@
+# Problem: Display the First Three Rows
+# Difficulty: Easy
+# Topic: Other
+# Language: pythondata
+# Submission: 2
+
+import pandas as pd
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+    return employees.head(3)
+    

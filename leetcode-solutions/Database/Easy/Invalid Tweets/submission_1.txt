@@ -1,0 +1,9 @@
+# Problem: Invalid Tweets
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+# Write your MySQL query statement below
+SELECT tweet_id FROM Tweets as T
+WHERE length(T.content) > 15;

@@ -1,0 +1,12 @@
+# Problem: Bank Account Summary II
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+SELECT U.name , SUM(T.amount) as balance  
+FROM Users U
+Join Transactions T
+ON U.account = T.account
+GROUP BY U.account 
+HAVING balance>10000

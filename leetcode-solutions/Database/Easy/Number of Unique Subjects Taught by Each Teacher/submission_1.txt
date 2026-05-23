@@ -1,0 +1,10 @@
+# Problem: Number of Unique Subjects Taught by Each Teacher
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+# Write your MySQL query statement below
+SELECT teacher_id, COUNT( DISTINCT  subject_id) as cnt
+FROM Teacher
+GROUP BY teacher_id;

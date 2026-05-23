@@ -1,0 +1,11 @@
+# Problem: Employees Earning More Than Their Managers
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+SELECT first.name as "Employee"
+FROM Employee AS first
+JOIN Employee AS second
+ON first.managerId = second.id
+WHERE first.salary > second.salary;

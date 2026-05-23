@@ -1,0 +1,9 @@
+# Find the Difference
+# Difficulty: Easy
+# Language: python
+
+class Solution:
+    def findTheDifference(self, s, t):
+        a = sum(ord(x) for x in s)
+        b = sum(ord(y) for y in t)
+        return chr(b-a)

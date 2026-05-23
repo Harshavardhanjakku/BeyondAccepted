@@ -1,0 +1,10 @@
+# Problem: Article Views I
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+SELECT DISTINCT author_id as id 
+FROM Views 
+WHERE author_id = viewer_id 
+ORDER BY author_id ASC;

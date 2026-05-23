@@ -1,0 +1,10 @@
+# Problem: Game Play Analysis I
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+# Write your MySQL query statement below
+SELECT player_id,MIN(event_date) as first_login
+FROM Activity
+GROUP BY player_id ;

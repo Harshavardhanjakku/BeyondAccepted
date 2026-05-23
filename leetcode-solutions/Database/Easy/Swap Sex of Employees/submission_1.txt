@@ -1,0 +1,8 @@
+# Problem: Swap Sex of Employees
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+UPDATE Salary
+SET sex = IF(sex = 'm', 'f', 'm');

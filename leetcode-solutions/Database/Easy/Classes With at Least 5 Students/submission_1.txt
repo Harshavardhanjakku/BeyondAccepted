@@ -1,0 +1,10 @@
+# Problem: Classes With at Least 5 Students
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+SELECT class 
+FROM Courses 
+GROUP BY class 
+HAVING Count(student)>=5

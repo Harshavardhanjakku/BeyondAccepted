@@ -1,0 +1,11 @@
+# Problem: Employees Earning More Than Their Managers
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 2
+
+# Write your MySQL query statement below
+SELECT name as "Employee" from Employee as E
+WHERE salary>(SELECT salary from Employee
+                WHERE id=E.managerid)
+

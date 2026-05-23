@@ -1,0 +1,10 @@
+# Problem: Combine Two Tables
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+select firstName, lastName, city, state
+from person a 
+left join address b 
+on a.personid = b.personid;

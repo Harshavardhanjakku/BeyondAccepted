@@ -1,0 +1,8 @@
+# Combine Two Tables
+# Difficulty: Easy
+# Language: mysql
+
+select firstName, lastName, city, state
+from person a 
+left join address b 
+on a.personid = b.personid;

@@ -1,0 +1,10 @@
+# Problem: Product Sales Analysis I
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 2
+
+SELECT P.product_name , S.year, S.price
+FROM Sales AS S 
+LEFT JOIN Product P 
+On S.product_id=P.product_id

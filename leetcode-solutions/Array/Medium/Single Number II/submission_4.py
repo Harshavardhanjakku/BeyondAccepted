@@ -1,0 +1,31 @@
+# Problem: Single Number II
+# Difficulty: Medium
+# Topic: Array
+# Language: python
+# Submission: 4
+
+class Solution(object):
+    def singleNumber(self, nums):
+        ans=0
+        for i in range(32):
+            c=0
+            for num in nums:
+                if (num>>i)&1:
+                    c+=1
+            if c%3:
+                ans=ans|(1<<i)
+        return ans
+class Solution(object):
+    def singleNumber(self, nums):
+        ans = 0
+        for i in range(32):
+            c = 0
+            for num in nums:
+                if (num >> i) & 1:
+                    c += 1
+            if c % 3:
+                ans |= (1 << i)
+        if ans >= 2**31:
+            ans -= 2**32
+        return ans
+

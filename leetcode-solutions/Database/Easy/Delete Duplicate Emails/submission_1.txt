@@ -1,0 +1,15 @@
+# Problem: Delete Duplicate Emails
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+DELETE FROM Person
+WHERE id NOT IN (
+    SELECT id
+    FROM (
+        SELECT MIN(id) AS id
+        FROM Person
+        GROUP BY email
+    ) AS temp
+);

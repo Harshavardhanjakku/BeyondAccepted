@@ -1,0 +1,25 @@
+# Problem: Sort Colors
+# Difficulty: Medium
+# Topic: Array
+# Language: python
+# Submission: 1
+
+class Solution(object):
+    def sortColors(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        n=len(nums)
+        i=0
+        j=0
+        for i in range(n):
+            flag=False
+            for j in range(n-i-1):
+                if nums[j]>nums[j+1]:
+                    nums[j],nums[j+1]=nums[j+1],nums[j]
+                    flag=True
+            if not flag :
+                break
+
+

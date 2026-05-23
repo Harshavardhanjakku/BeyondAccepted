@@ -1,0 +1,7 @@
+# Duplicate Emails
+# Difficulty: Easy
+# Language: mysql
+
+SELECT email from Person 
+Group by email 
+Having count(email)>1

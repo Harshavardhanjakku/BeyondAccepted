@@ -1,0 +1,10 @@
+# Problem: Second Highest Salary
+# Difficulty: Medium
+# Topic: Database
+# Language: mysql
+# Submission: 3
+
+SELECT max(salary) as SecondHighestSalary FROM Employee
+WHERE salary < (
+    SELECT MAX(salary) FROm Employee
+)

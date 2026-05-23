@@ -1,0 +1,17 @@
+# Nth Highest Salary
+# Difficulty: Medium
+# Language: mysql
+
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE toprows INT;
+  SET toprows = N - 1;
+
+  RETURN (
+      SELECT DISTINCT salary
+      FROM Employee
+      ORDER BY salary DESC
+      LIMIT toprows, 1
+  );
+END;
+

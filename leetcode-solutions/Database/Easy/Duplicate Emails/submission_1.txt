@@ -1,0 +1,9 @@
+# Problem: Duplicate Emails
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 1
+
+SELECT email from Person 
+Group by email 
+Having count(email)>1
