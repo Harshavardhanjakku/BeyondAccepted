@@ -1,0 +1,11 @@
+# Problem: Change Data Type
+# Difficulty: Easy
+# Topic: Other
+# Language: pythondata
+# Submission: 1
+
+import pandas as pd
+
+def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
+    students["grade"] = students["grade"].astype(int)
+    return students

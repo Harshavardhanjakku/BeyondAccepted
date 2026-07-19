@@ -1,0 +1,11 @@
+# Problem: Employee Bonus
+# Difficulty: Easy
+# Topic: Database
+# Language: mysql
+# Submission: 2
+
+SELECT E.name , B.bonus
+FROM Employee E
+LEFT JOIN Bonus B
+ON E.empId=B.empId
+where B.bonus is null or B.bonus <1000
